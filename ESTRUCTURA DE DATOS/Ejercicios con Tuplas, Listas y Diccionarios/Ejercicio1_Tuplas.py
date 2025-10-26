@@ -9,8 +9,4 @@ print("El segundo elemento es:", vulnerabilidades[1])
 #b) Mostrar los dos últimos elementos  
 print("Los dos últimos elementos son:", vulnerabilidades[-2:])
 #c) Intentar modificar un elemento
-try:
-    vulnerabilidades[1] = 'XSS'
-except TypeError as e:
-    print("Error al intentar modificar un elemento de la tupla:", e)        
-#Las tuplas son inmutables, por lo que no se pueden modificar sus elementos una vez creadas.
+vulnerabilidades[1] = 'XSS' #Las tuplas son inmutables, por lo que no se pueden modificar sus elementos una vez creadas.
