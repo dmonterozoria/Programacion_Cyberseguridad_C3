@@ -27,7 +27,7 @@ def main():
         ip = input("Ingrese la IP de origen: ").strip()
         try:
             ipaddress.ip_address(ip)
-            break  # Si es válida, salir del bucle
+            break  #Si es válida, salir del bucle
         except ValueError:
             print(f"❌ Error: '{ip}' no es una IP válida. Intente de nuevo.")
 
@@ -55,6 +55,7 @@ def main():
     resultado = EvaluarPaquete(ip, puerto, protocolo)
 
     #Resultado
+    print("===== Resultado del Analisis =====")
     if resultado:
         print("✅ Paquete permitido")
     else:
